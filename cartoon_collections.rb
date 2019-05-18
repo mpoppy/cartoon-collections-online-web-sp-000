@@ -24,5 +24,6 @@ def find_the_cheese(snacks)
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
   #cheese = cheese_types.join(', ')
-  snacks.any? { |snack| cheese_types.include?(snack) } #returns true if there is a match
+  snacks.find { |snack| cheese_types.include?(snack) } #returns true if there is a match
+  #now that we know there is a match, how do we capture it
 end
